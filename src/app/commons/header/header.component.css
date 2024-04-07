@@ -1,0 +1,23 @@
+.custom-colour {
+    background-color: black;
+}
+
+.carticon {
+    height: 35px;
+    width: 40px;
+    /* background-color: #333230; */
+}
+
+.cart-number {
+    margin-left: -11px;
+    color: white;
+}
+
+.loginButton {
+    padding-top: 10px;
+}
+
+.wish-number {
+    margin-left: -28px;
+    color: white;
+}
