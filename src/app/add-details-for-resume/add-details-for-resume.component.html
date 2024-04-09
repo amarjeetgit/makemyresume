@@ -1,0 +1,55 @@
+<app-header></app-header>
+<div class="container" id="content" #content>
+    <div *ngIf="experienced">
+        <p>template for experienced</p>
+
+    </div>
+
+    <div *ngIf="!experienced">
+        <div class="adddetails">
+            <form #adddetails="ngForm" class="adddetailsForm" (ngSubmit)="onSubmit(adddetails)">
+                <div class="row">
+                    <p class="row col-4">
+                        <label class="col-4" for="firstname">First Name</label>
+                        <input class="col-4" type="text" name="firstname" ngModel>
+                    </p>
+                    <p class="row col-4">
+                        <label class="col-4" for="middlename">Middle Name</label>
+                        <input class="col-4" type="text" name="middlename" ngModel>
+                    </p>
+                    <p class="row col-4">
+                        <label class="col-4" for="lastname">Last Name</label>
+                        <input class="col-4" type="text" name="lastname" ngModel>
+                    </p>
+                </div>
+                <div class="row">
+                    <p class="row col-4">
+                        <label class="col-4" for="email">Email </label>
+                        <input class="col-4" type="text" id="email" name="email" ngModel>
+                    </p>
+                    <p class="row col-4">
+                        <label class="col-3" for="gender">Gender: </label>
+                        <input class="col-1" type="radio" value="male" name="gender" ngModel> Male
+                        <input class="col-1" type="radio" value="female" name="gender" ngModel> Female
+                    </p>
+                    <p class="row col-4">
+                        <label class="col-2" for="isMarried">Married: </label>
+                        <input class="col-2" type="checkbox" name="isMarried" ngModel>
+                    </p>
+                </div>
+
+                <select name="country" ngModel>
+                    <option [ngValue]="c.id" *ngFor="let c of countryList">
+                        {{c.name}}
+                    </option>
+                </select>
+
+                <p>
+                    <button type="submit">Download Resume</button>
+                </p>
+
+            </form>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

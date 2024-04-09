@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 text-center" style="line-height: 0">
-                <h1 class="mt-0 mb-3 text-blue">Resume Builder</h1>
+                <h1 class="mt-0 mb-3 text-blue">MakeMyResume</h1>
                 <span style="font-family: cursive;font-style: italic">(Make your own way)</span>
             </div>
 
@@ -28,11 +28,11 @@
                 </li>
                 <li class="nav-item">
                     <div ngbDropdown class="d-inline-block">
-                        <button class="btn" style="color: white;" id="dropdownBasic1" ngbDropdownToggle>Categories
+                        <button class="btn" style="color: white;" id="dropdownBasic1" ngbDropdownToggle>Resumes
                         </button>
                         <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-                            <a routerLink="/freshers" ngbDropdownItem>For Freshers</a>
-                            <a routerLink="/experienced" ngbDropdownItem>For Experienced</a>
+                            <a (click)="adddetails(0)" ngbDropdownItem>For Freshers</a>
+                            <a (click)="adddetails(1)" ngbDropdownItem>For Experienced</a>
                         </div>
                     </div>
                 </li>
@@ -49,7 +49,7 @@
                     </div>
                 </li>
             </ul>
-            <ul class="nav navbar-nav navbar-right">
+            <!-- <ul class="nav navbar-nav navbar-right">
                 <form class="form-inline my-2 my -lg-0 ">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                     <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
@@ -69,7 +69,7 @@
                     <a role="button" style="color: white;" *ngIf="loggedin" class="nav-link"
                         (click)="logout()">Logout</a>
                 </li>
-            </ul>
+            </ul> -->
         </div>
     </nav>
 

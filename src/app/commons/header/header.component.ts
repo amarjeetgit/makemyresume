@@ -31,4 +31,12 @@ export class HeaderComponent implements OnInit {
   logout() {
     this.util.logout();
   }
+
+  adddetails(value: any) {
+    this.r.routeReuseStrategy.shouldReuseRoute = function () {
+      return false;
+    }
+    this.r.onSameUrlNavigation = 'reload';
+    this.r.navigate(['adddetails', value]);
+  }
 }

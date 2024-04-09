@@ -1,10 +1,10 @@
 <app-header></app-header>
 
-<div style="margin: 10px;" class="row">
+<div style="margin: 10px; text-align: -webkit-center;">
 
 
 
-    <div class="panel panel-info col-6">
+    <div class="panel panel-info">
         <div *ngIf="loggedin" style="display: inline-flex;">
             <span>
                 <h5>Hi, </h5>
@@ -14,108 +14,94 @@
         </div>
         <div class="panel-heading">Welcome to <span
                 style="color:red; text-decoration-line: underline;text-decoration-color: black;font-family: cursive">
-                BooksJunction</span> </div>
+                MakeMyResume</span> </div>
         <div class="panel-body">
             Website Descriptions here<br>
             And some designing work with some animated decorations
         </div>
         <div class="panel-body">
-            <p style="font-size: 30px;color: black;text-decoration-line: underline;background-color: chartreuse">Best
-                Rated
-                Books</p>
-            <ngb-carousel>
-                <ng-template ngbSlide>
+            <p
+                style="font-size: 30px;color: black;text-decoration-line: underline;background-color: rgb(217, 217, 216)">
+                Templates</p>
+            <div class="row">
+                <div class="col-4">
                     <table>
                         <tr>
-                            <td><img height="170px" width="150px" class="d-block " src="assets/pictures/bookpromo1.jpg">
+                            <td><img height="300px" width="250px" class="d-block " src="assets/pictures/template1.svg">
                             </td>
                         </tr>
                         <tr>
-                            <td style="color: black;font-family: cursive">The Great Reset By Richard Florida</td>
+                            <td style="color: black;font-family: cursive">The Great Template</td>
                         </tr>
-                        <tr>
-                            <td style="color: blue">Price : RS 350 only</td>
-                        </tr>
+                        <!-- <tr>
+                            <td style="color: blue">5 years above experienced</td>
+                        </tr> -->
                         <tr>
                             <td><button><a href="login">Buy Now</a></button><button><a href="login">Add to
                                         Wishlist</a></button>
                             </td>
                         </tr>
                     </table>
-                </ng-template>
-                <ng-template ngbSlide>
+                </div>
+                <div class="col-4">
                     <table>
                         <tr>
-                            <td><img style="height: 170px ;width: 150px;" class="d-block  "
-                                    src="assets/pictures/bookpromo3.jpg">
+                            <td><img height="270px" width="250px" class="d-block  "
+                                    src="assets/pictures/template2.webp">
                             </td>
                         </tr>
                         <tr>
-                            <td style="color: black;font-family: cursive">Indian Art and Culture By Gaurav Agarwal</td>
+                            <td style="color: black;font-family: cursive">Template 2</td>
                         </tr>
+                        <!-- <tr>
+                            <td style="color: blue">type 2</td>
+                        </tr> -->
                         <tr>
-                            <td style="color: blue">Price : RS 250 only</td>
-                        </tr>
-                        <tr>
-                            <td><button><a href="login">Buy Now</a></button><button><a href="login">Add to
+                            <td><button><a href="login"> Build </a></button><button><a href="login">Add to
                                         Wishlist</a></button>
                             </td>
                         </tr>
                     </table>
-                </ng-template>
-                <ng-template ngbSlide>
+                </div>
+                <div class="col-4">
                     <table>
                         <tr>
-                            <td><img style="height: 170px ;width: 150px;" class="d-block "
-                                    src="assets/pictures/bookpromo4.jpg">
+                            <td><img height="270px" width="250px" class="d-block " src="assets/pictures/template3.jpeg">
                             </td>
                         </tr>
                         <tr>
-                            <td style="color: black;font-family: cursive">Indian Economy By Gaurav Agarwal</td>
+                            <td style="color: black;font-family: cursive">Template 3</td>
                         </tr>
+                        <!-- <tr>
+                            <td style="color: blue">type 3</td>
+                        </tr> -->
                         <tr>
-                            <td style="color: blue">Price : RS 110 only</td>
-                        </tr>
-                        <tr>
-                            <td><button><a href="login">Buy Now</a></button><button><a href="login">Add to
+                            <td><button><a href="login">Build</a></button><button><a href="login">Add to
                                         Wishlist</a></button>
                             </td>
                         </tr>
                     </table>
-                </ng-template>
-            </ngb-carousel>
+                </div>
+            </div>
         </div><br><br>
 
     </div>
 
 
-    <div class="panel panel-info col-6">
-        <!-- <div class="row">
-    <div class="panel-body col-6">
-      <img height="200px" width="250px" src="assets/pictures/books.jpg">
-
-    </div>
-    <div class="panel-body col-6">
-        <img height="200px" width="250px" src="assets/pictures/books2.jpg">
-  
-      </div>
-    </div><br>
-    <div class="row">
-        <img height="200px" width="90%" src="assets/pictures/library.jpg">
-    </div> -->
-        <ngb-carousel data-interval="5000">
+    <!-- <div class="panel center panel-info" style="margin-bottom: 70px;">
+        <ngb-carousel data-interval="30">
             <ng-template ngbSlide class="carousel-item active">
-                <img style="height: 350px" class="d-block w-100 " src="assets/pictures/books.jpg">
+                <img style="height: 350px" class="d-block " src="assets/pictures/template1.svg">
             </ng-template>
             <ng-template ngbSlide class="carousel-item">
-                <img style="height: 350px" class="d-block w-100 " src="assets/pictures/books2.jpg">
+                <img style="height: 350px" class="d-block" src="assets/pictures/template2.webp">
             </ng-template>
             <ng-template ngbSlide class="carousel-item">
-                <img style="height: 350px" class="d-block w-100 " src="assets/pictures/library.jpg">
+                <img style="height: 350px" class="d-block  " src="assets/pictures/template3.jpeg">
             </ng-template>
         </ngb-carousel>
 
-    </div>
+    </div> -->
 
 </div>
 <app-footer></app-footer>
